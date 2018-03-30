@@ -7,22 +7,38 @@
 	  <meta HTTP-EQUIV="Content-Language" Content="hu">
 	</head>
 
+	<!-- 
+		Created by: Magyar (donix) Tamás
+	-->
+	
+	<!-- 
+	Pages:
+		- Index
+		- News
+		- Toplist
+		- Profile: (default your) you can find any player profile
+			- Error(Unable to find a palyer)
+		- Shop: you can buy skins, score reset for gold
+			- Error (You are not logged in / you dont have enough gold to unlock / its already unlocked )
+	-->
+	
 	<body>
 	
 	<div id="menu"> 
-		<div class="menu-item"><p class="menu-item-p">Kezdőlap</p></div>
-		<div class="menu-item"><p class="menu-item-p">Újdonságok</p></div>
-		<div class="menu-item"><p class="menu-item-p">Ranglista</p></div>
-		<div class="menu-item"><p class="menu-item-p">Profil</p></div>
-		<div class="menu-item"><p class="menu-item-p">Bolt</p></div>
+		<a href="index.php"><div class="menu-item"><p class="menu-item-p">Kezdőlap</p></div></a>
+		<a href="index.php?page=news"><div class="menu-item"><p class="menu-item-p">Újdonságok</p></div></a>
+		<a href="index.php?page=top"><div class="menu-item"><p class="menu-item-p">Ranglista</p></div></a>
+		<a href="index.php?page=profile"><div class="menu-item"><p class="menu-item-p">Profil</p></div></a>
+		<a href="index.php?page=shop"><div class="menu-item"><p class="menu-item-p">Bolt</p></div></a>
 	</div>
 	
 	<div id="login">
+		<br>
 		<form action="/action_page.php">
-			<label for="fname">Felhasználónév</label>
+			<label class="login-item-center" for="fname">Felhasználónév</label>
 			<input type="text" id="fname" name="firstname" placeholder="Írd be a felhasználóneved!">
 
-			<label for="lname">Jelszó</label>
+			<label class="login-item-center" for="lname">Jelszó</label>
 			<input type="text" id="lname" name="lastname" placeholder="Írd be a jelszavad!">
 		  
 			<input type="submit" value="Belépés">

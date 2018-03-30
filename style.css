@@ -21,7 +21,7 @@
 	font-size: 4vw;
 	
 	color: white;
-	text-shadow: 3px 2px grey;
+
 	
 	text-align: center;
 	vertical-align: middle;
@@ -34,6 +34,7 @@
 	border-style: groove;
 	border-color: #333;
 	
+	margin-top: 5%;
 	margin-left: 15%;
 	width: 9%;
 	height: 26%;
@@ -48,6 +49,7 @@
 	border-style: groove;
 	border-color: #333;
 	
+	margin-top: 5%;
 	margin-left: 75%;
 	width: 10%;
 	height: 26%;
@@ -84,6 +86,14 @@
 	color: white;
 	font-family: "Arial", Times, serif;
 	font-size: 1vw;
+}
+
+.login-item-center
+{
+    display: block;
+    text-align: center;
+    line-height: 150%;
+    font-size: .85em;
 }
 
 
@@ -127,4 +137,14 @@ body
 p
 {
 	color:#330000;
+}
+
+a:link
+ {
+    text-decoration: none;
+}
+
+a:visited
+ {
+    text-decoration: none;
 }
