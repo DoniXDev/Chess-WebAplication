@@ -4,7 +4,6 @@
 	border-style: groove;
 	border-color: #333;
 	width: 50%;
-	height: 100%;
 	margin: 0 auto;
 }
 
@@ -51,16 +50,31 @@
 	
 	margin-top: 5%;
 	margin-left: 75%;
-	width: 10%;
-	height: 26%;
+	width: 8%;
+	height: 24%;
 	
-	display: flex;
-    justify-content: center;
-    align-items: center;
+	padding: 2% 2%;
 	
 	background: linear-gradient(180deg,#ece9e6, #ffffff);
 }
 
+#author
+{
+	font-family: "Arial", Times, serif;
+	font-size: 80%;
+	color:white;
+	
+	position: fixed;
+	bottom:0;
+	right:0;
+	float:right;
+}
+
+#sub-content
+{
+	height:100%;
+	padding: 12px 20px;
+}
 
 .menu-item
 {
@@ -96,6 +110,11 @@
     font-size: .85em;
 }
 
+.content-image
+{
+	height:40%;
+	width:80%;
+}
 
 input[type=text]
 {
@@ -120,7 +139,6 @@ input[type=submit]
     border: none;
     border-radius: 4px;
     cursor: pointer;
-	
 }
 
 input[type=submit]:hover
@@ -134,9 +152,18 @@ body
 	background: linear-gradient(145deg,#606c88, #3f4c6b);
 }
 
+img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 p
 {
 	color:#330000;
+	text-indent: 5%;
+	text-transform: justify;
 }
 
 a:link

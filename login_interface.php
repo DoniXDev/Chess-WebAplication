@@ -22,14 +22,18 @@ function Register($name, $pass)
 
 function Login($name, $pass)
 {
-	
 	$result = $GLOBALS['conn']->query("SELECT * FROM players");
 		
 	if ($result->num_rows > 0) 
 		while($row = $result->fetch_assoc()) 
 			if($row["name"] == $name)
-				if($row["pass"] == $pass)
+				if(trim($row["pass"]) == trim($pass))
 					return true;
 				
 	return false;
+}
+
+function GetMD5($pStr) {
+    $hash = md5($pStr);
+	return strtoupper($hash);
 }

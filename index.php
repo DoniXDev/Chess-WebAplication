@@ -1,4 +1,6 @@
-﻿<html>
+﻿<?php session_start(); $logged = "";?>
+
+<html>
 	<head>
 	  <title>Chess</title>
 	  <link rel="stylesheet" type="text/css" href="chess/style.css">
@@ -20,6 +22,13 @@
 			- Error(Unable to find a palyer)
 		- Shop: you can buy skins, score reset for gold
 			- Error (You are not logged in / you dont have enough gold to unlock / its already unlocked )
+		
+	Scripts:	
+		- Login (2form login/logged), login script
+		- Buy
+		- Statics
+		- game-manager (off)
+		
 	-->
 	
 	<body>
@@ -32,28 +41,33 @@
 		<a href="index.php?page=shop"><div class="menu-item"><p class="menu-item-p">Bolt</p></div></a>
 	</div>
 	
-	<div id="login">
-		<br>
-		<form action="/action_page.php">
-			<label class="login-item-center" for="fname">Felhasználónév</label>
-			<input type="text" id="fname" name="firstname" placeholder="Írd be a felhasználóneved!">
+	<?php
+	
+	if(!empty($_SESSION["logged"]))
+		$logged = $_SESSION["logged"];
 
-			<label class="login-item-center" for="lname">Jelszó</label>
-			<input type="text" id="lname" name="lastname" placeholder="Írd be a jelszavad!">
-		  
-			<input type="submit" value="Belépés">
-		</form>
-	</div>
+	if($logged == "")
+		include "form_login.php";
+	else
+		include "form_logged.php";
+
+	?>
 	
 	<div id="content">
 		
 		<div id="header">
 			<div id="title">Chess</div>
+			<div id="author">By: Magyar Tamás (Epam Nyári Gyakorlat Pályamunka)
 		</div>
 		
-		
-	
 	</div>
+	
+	<div id="sub-content">
+		
+		<?php include 'home.php'?>
+		
+	</div>
+	
 	
 	</body>
 </html>
