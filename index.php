@@ -47,9 +47,9 @@
 		$logged = $_SESSION["logged"];
 
 	if($logged == "")
-		include "form_login.php";
+		include "forms/form_login.php";
 	else
-		include "form_logged.php";
+		include "forms/form_logged.php";
 
 	?>
 	
@@ -70,19 +70,19 @@
 				$page = $_GET['page'];
 			
 			if($page == "news")
-				include 'news.php';
+				include 'pages/news.php';
 			
 			if($page == "top")
-				include 'toplist.php';
+				include 'pages/toplist.php';
 			
 			if($page == "profile")
-				include 'profile.php';
+				include 'pages/profile.php';
 			
 			if($page == "shop")
-				include 'shop.php';
+				include 'pages/shop.php';
 			
 			if($page == "home")
-				include 'home.php';
+				include 'pages/home.php';
 		?>
 		
 	</div>
