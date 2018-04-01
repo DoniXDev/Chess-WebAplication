@@ -23,4 +23,4 @@ A program lehetőséget add megméretteni magadat a sakk világába egy játéko
 
 <h2>A képre kattintva letöltheted a játékot.</h2>
 
-<a href="http://donixdev.esy.es/Chess%200.4.zip"><img style="display: block; margin-left: auto; margin-right: auto;" class="content-image" src="1.png" /></a>
+<a href="http://donixdev.esy.es/Chess%200.4.1.zip"><img class="content-image" src="1.png" /></a>

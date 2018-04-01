@@ -57,14 +57,33 @@
 		
 		<div id="header">
 			<div id="title">Chess</div>
-			<div id="author">By: Magyar Tamás (Epam Nyári Gyakorlat Pályamunka)
+			<div id="author">Készítette: Magyar Tamás (Epam Nyári Gyakorlat Pályamunka 2018) version: 0.1
 		</div>
 		
 	</div>
 	
 	<div id="sub-content">
 		
-		<?php include 'home.php'?>
+		<?php 
+			$page = "home";
+			if(!empty($_GET['page']))
+				$page = $_GET['page'];
+			
+			if($page == "news")
+				include 'news.php';
+			
+			if($page == "top")
+				include 'toplist.php';
+			
+			if($page == "profile")
+				include 'profile.php';
+			
+			if($page == "shop")
+				include 'shop.php';
+			
+			if($page == "home")
+				include 'home.php';
+		?>
 		
 	</div>
 	
