@@ -58,6 +58,22 @@
 	background: linear-gradient(180deg,#ece9e6, #ffffff);
 }
 
+#logged
+{
+	position: fixed;
+	
+	border-style: groove;
+	border-color: #333;
+	
+	margin-top: 5%;
+	margin-left: 75%;
+	width: 10%;
+	height: 25%;
+	
+	text-align: center;
+	background: linear-gradient(180deg,#ece9e6, #ffffff);
+}
+
 #author
 {
 	font-family: "Arial", Times, serif;
@@ -76,6 +92,23 @@
 	height:80%;
 	padding: 12px 20px;
 }
+
+#ToplistDIV
+{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ToplistTable
+{
+	background: linear-gradient(to bottom, #e6dada, #274046);;
+	width: 85%;
+	height: 85%;
+	
+	border: 4px solid black;
+}
+
 
 .menu-item
 {
@@ -118,6 +151,23 @@
 	margin-right: auto;
 	size:25%;
 }
+
+.oli
+{
+	line-height: 20%;
+	font-family: "Arial", Times, serif;
+	font-size: 1vw;
+}
+
+.loggeddiv
+{
+	height:20%;
+	
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 input[type=password]
 {
@@ -190,4 +240,22 @@ a:link
 a:visited
  {
     text-decoration: none;
+}
+
+td
+{
+	font-family: "Arial", Times, serif;
+	font-size: 2vw;
+	text-align: center;
+	color: white;
+}
+
+tr.border_bottom td
+{
+  border-bottom:2pt solid black;
+}
+
+h4
+{
+	height:10%;
 }

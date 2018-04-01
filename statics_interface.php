@@ -2,7 +2,6 @@
 
 include 'database.php';
 
-
 function GetPlayerDatas($name)
 {
 	$result = $GLOBALS['conn']->query("SELECT * FROM players");
@@ -27,7 +26,7 @@ function GetPlayerDatas($name)
 
 function GetHightScores()
 {
-	$result = $GLOBALS['conn']->query("SELECT * FROM players ORDER BY mmr");
+	$result = $GLOBALS['conn']->query("SELECT * FROM players ORDER BY mmr DESC");
 	
 	$datas = array("empty:0", "empty:0", "empty:0", "empty:0", "empty:0", "empty:0" , "empty:0" , "empty:0" , "empty:0" , "empty:0");
 	$count = 0;
