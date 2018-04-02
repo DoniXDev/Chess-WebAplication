@@ -168,6 +168,11 @@
     align-items: center;
 }
 
+.update
+{
+	border-bottom: 2px solid black;
+}
+
 
 input[type=password]
 {
