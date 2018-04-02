@@ -6,6 +6,6 @@
 
 			<label class="login-item-center" for="password">Jelszó</label>
 			<input type="password" id="password" name="password" placeholder="Írd be a jelszavad!">
-		<input type="submit" value="Belépés">
-	</form>
+			<input type="submit" value="Belépés">
+		</form>
 </div>		

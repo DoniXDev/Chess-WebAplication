@@ -7,7 +7,7 @@
 		
 		<?php
 		include_once './statics_interface.php';
-		$do = GetHightScores();
+		$do = GetHightScores("mmr");
 		$logged; 
 
 		$c = 1;
@@ -16,9 +16,9 @@
 			{
 				$splitted = explode(":", $value);
 				if($logged == $splitted[0])
-					echo "<tr> <td> <h4>$c</h4></td> <td> <h4>$splitted[0]</h4> </td> <td> <h4>$splitted[1]</h4> <td> </tr>";
+					echo "<tr> <td> <h4>$c</h4></td> <td> <a href=\"index.php?page=profile&name=$splitted[0]\"><h4>$splitted[0] </a></h4> </td> <td> <h4>$splitted[1]</h4> <td> </tr>";
 				else
-					echo "<tr> <td> $c </td> <td> $splitted[0] </td> <td> $splitted[1] <td> </tr>";
+					echo "<tr> <td> $c </td> <td> <a href=\"index.php?page=profile&name=$splitted[0]\"> $splitted[0] </a> </td> <td> $splitted[1] <td> </tr>";
 				
 				$c++;
 			}

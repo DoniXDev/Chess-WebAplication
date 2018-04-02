@@ -75,8 +75,21 @@
 			if($page == "top")
 				include 'pages/toplist.php';
 			
+			$search = "";
+			if(!empty($_GET['name']))
+				$search = $_GET['name'];
+			
 			if($page == "profile")
-				include 'pages/profile.php';
+				if($search == "" )
+					if($logged == "")
+						include 'pages/profile_empty.php';
+					else
+					{
+						$search = $logged;
+						include 'pages/profile.php';
+					}
+				else
+					include 'pages/profile.php';
 			
 			if($page == "shop")
 				include 'pages/shop.php';

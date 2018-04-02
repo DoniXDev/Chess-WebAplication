@@ -4,6 +4,22 @@
 </div>
 
 <div class="update">
+	<h2>Játék Frissítés |0.4.2|</h2>
+		<h3>Frissítve</h3>
+		<ul>
+			<li>Meccs adatok feltöltési hibája javítva</li>
+		</ul>		
+</div>
+
+<div class="update">
+	<h2>Játék Frissítés |0.4.1|</h2>
+		<h3>Hozzáadva</h3>
+		<ul>
+			<li>Meccs adatok feltöltése</li>
+		</ul>		
+</div>
+
+<div class="update">
 	<h2>Weboldal Frissítés |0.1|</h2>
 
 		<h3>donixdev.esy.es/chess</h3>
@@ -21,21 +37,6 @@
 	</p>
 </div>
 
-<div class="update">
-	<h2>Játék Frissítés |0.4.2|</h2>
-		<h3>Frissítve</h3>
-		<ul>
-			<li>Meccs adatok feltöltési hibája javítva</li>
-		</ul>		
-</div>
-
-<div class="update">
-	<h2>Játék Frissítés |0.4.1|</h2>
-		<h3>Hozzáadva</h3>
-		<ul>
-			<li>Meccs adatok feltöltése</li>
-		</ul>		
-</div>
 
 <div class="update">
 	<h2>Játék Frissítés |0.4|</h2>

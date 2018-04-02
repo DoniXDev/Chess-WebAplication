@@ -24,7 +24,7 @@ function GetPlayerDatas($name)
 		return $datas;
 }
 
-function GetHightScores()
+function GetHightScores($type)
 {
 	$result = $GLOBALS['conn']->query("SELECT * FROM players ORDER BY mmr DESC");
 	
@@ -35,7 +35,7 @@ function GetHightScores()
 	while($row = $result->fetch_assoc()) 
 		if($count < 10)
 		{
-			$datas[$count] = $row["name"] . ":" . $row["mmr"];
+			$datas[$count] = $row["name"] . ":" . $row[$type];
 			$count++;
 		}
 	
