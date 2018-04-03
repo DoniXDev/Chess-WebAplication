@@ -57,14 +57,16 @@
 		
 		<div id="header">
 			<div id="title">Chess</div>
-			<div id="author">Készítette: Magyar Tamás (Epam Nyári Gyakorlat Pályamunka 2018) version: 0.1
+			<div id="author">Készítette: Magyar Tamás (Epam Nyári Gyakorlat Pályamunka 2018) version: 1.0
 		</div>
 		
 	</div>
 	
 	<div id="sub-content">
 		
-		<?php 
+		<?php
+			include_once "statics_interface.php";
+			
 			$page = "home";
 			if(!empty($_GET['page']))
 				$page = $_GET['page'];
@@ -86,11 +88,20 @@
 					else
 					{
 						$search = $logged;
-						include 'pages/profile.php';
+						
+						if(!is_null(GetPlayerDatas($search)))
+							include 'pages/profile.php';
+						else
+							include 'pages/profile_notfound.php';
 					}
 				else
-					include 'pages/profile.php';
-			
+				{
+					if(!is_null(GetPlayerDatas($search)))
+						include 'pages/profile.php';
+					else
+						include 'pages/profile_notfound.php';	
+				}
+				
 			if($page == "shop")
 				include 'pages/shop.php';
 			

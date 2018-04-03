@@ -17,7 +17,7 @@ A sakkjátékot két játékos játssza egymás ellen a négyzet alakú, nyolc s
 
 <h1>Játssz most!</h1>
 <p>
-A program lehetőséget add megméretteni magadat a sakk világába egy játékos kereső rendszerrel, nincs már dolgod csak letölteni a programot és játszani online más játékosokkal. Sakkprogramom C# nyelvebn íródott, nyílt forráskódu program amely megtekinthető az alábbi linken keresztűl: 
+A program lehetőséget ad megméretteni magad a sakk világába, nincs más dolgod csak letölteni a programot és játszani. A játék online meccskereső rendszerrel juttat ellenfélhez. Sakkprogramom C# nyelvben íródott. Nyílt forráskódu program amely kódja megtekinthető az alábbi linken keresztűl: 
 </p>
 <h3><a href="https://github.com/DoniXDev/Chess">Github</a>!</h3>
 
