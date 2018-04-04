@@ -52,7 +52,7 @@
 		
 		<div id="header">
 			<div id="title">Chess</div>
-			<div id="author">Készítette: Magyar Tamás (Epam Nyári Gyakorlat Pályamunka 2018) version: 1.0
+			<div id="author">version: 1.0 <br> Készítette: Magyar Tamás <br> (Epam Nyári Gyakorlat Pályamunka 2018)
 		</div>
 		
 	</div>
