@@ -204,6 +204,28 @@
 	padding-top: 2%;
 }
 
+.shop-item-selected
+{
+	width: 30%;
+	height: 100%;
+	border: 1px solid black;
+	float: right;
+
+	background: linear-gradient(to right, #606c88, #3f4c6b);
+
+	font-family: "Arial", Times, serif;
+	font-size: 1vw;
+	
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	
+	width: 20%;
+	height: 50%;	
+	margin-top: 3%;
+	margin-right: 4%;
+}
+
 .shop-item-buy
 {
 	width: 30%;
