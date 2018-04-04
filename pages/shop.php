@@ -2,26 +2,40 @@
 
  <?php
 
-	$i=1;
-	while ($i<=10)
+
+ 
+ 
+ 
+	$data = GetShopItems();
+	$max = count($data);
+ 
+	$i=0;
+	while ($i<$max)
 	{
+		$split = explode(":", $data[$i]);	
 ?>
 
 <div class="shop-item">
-	<a href="./index.php?page=shop&buy="><div class="shop-item-buy">
-		<p class="shop-item-buy-p">Vásárlás</p>
-	</a></div>
 
+	<a href="./index.php?page=shop&buy=<?php echo $split[0];?>:<?php echo $split[1];?>"><div class="shop-item-buy">
+		<p class="shop-item-buy-p">
+		<?php
+			echo "Vásárlás";
+		
+		?>
+		</p>
+	</div></a>
+	
 	<div class="shop-item-images">
-		<img class="shop-item-image" src="./units/BlackB.png">
+		<img class="shop-item-image" src="./units/<?php echo $split[5];?>.png">
 	</div>
 	
 	<div class="shop-item-images">
-		<img class="shop-item-image" src="./units/WhiteB.png">
+		<img class="shop-item-image" src="./units/<?php echo $split[4];?>.png">
 	</div>
 	
 	<div class="shop-item-images">
-		<b>50 arany</b>
+		<b><?php echo $split[3];?> arany</b>
 	</div>
 	
 	<div class="shop-item-images">
@@ -33,7 +47,7 @@
 	</div>
 	
 	<div class="shop-item-images" >
-		<b>Ára</b>
+		<b><?php echo $split[2];?></b>
 	</div>
 </div>
 <br>
