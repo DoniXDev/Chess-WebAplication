@@ -23,11 +23,6 @@
 		- Shop: you can buy skins, score reset for gold
 			- Error (You are not logged in / you dont have enough gold to unlock / its already unlocked )
 		
-	Scripts:	
-		- Login (2form login/logged), login script
-		- Buy
-		- Statics
-		- game-manager (off)
 		
 	-->
 	
@@ -103,7 +98,10 @@
 				}
 				
 			if($page == "shop")
-				include 'pages/shop.php';
+				if($logged != "")
+					include 'pages/shop.php';
+				else
+					include 'pages/shop_error.php';
 			
 			if($page == "home")
 				include 'pages/home.php';
@@ -111,6 +109,6 @@
 		
 	</div>
 	
-	
 	</body>
+
 </html>

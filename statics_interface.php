@@ -6,7 +6,7 @@ function GetPlayerDatas($name)
 {
 	$result = $GLOBALS['conn']->query("SELECT * FROM players");
 	
-	$datas = array("games", "wins", "mmr", "gold");
+	$datas = array("games", "wins", "mmr", "gold", "inventory");
 	
 	if ($result->num_rows > 0) 
 		while($row = $result->fetch_assoc()) 
@@ -16,6 +16,7 @@ function GetPlayerDatas($name)
 				$datas[1] = $row["wins"];
 				$datas[2] = $row["mmr"];
 				$datas[3] = $row["gold"];
+				$datas[4] = $row["inventory"];
 			}
 	
 	if($datas[0] == "games")
@@ -40,6 +41,46 @@ function GetHightScores($type)
 		}
 	
 	return $datas;
+}
+
+function GetShopItems()
+{
+	$data = array();
+	$result = $GLOBALS['conn']->query("SELECT * FROM shop");
+	
+	if ($result->num_rows > 0) 
+		while($row = $result->fetch_assoc()) 
+			array_push($data, $row["type"] . ":" . $row["varian"] . ":" . $row["name"] . ":" . $row["cost"] . ":" . $row["w_src"] . ":" . $row["b_src"]);
+	else
+		return null;
+	
+	return $data;
+}
+
+function Buy($name, $type, $variant)
+{
+	$result = $GLOBALS['conn']->query("SELECT * FROM shop");
+	$data = GetPlayerDatas($name);
+	$inventory = $data[4];
+	
+	$cost = -1;
+	
+	if ($result->num_rows > 0) 
+	while($row = $result->fetch_assoc())
+	if($row['type'] == $type)
+		if($row['varian'] == $variant)
+			if($row['cost'] <= $data[3])
+				$cost = $row['cost'];
+			else
+				return false;
+	
+	if($cost == -1)
+		return false;
+
+	$inventory[$type] = $variant;
+	
+	$GLOBALS['conn']->query("UPDATE players SET gold = gold - '$cost', inventory = '$inventory' WHERE name = '$name';");
+	return true;
 }
 
 function Win($winner, $loser)

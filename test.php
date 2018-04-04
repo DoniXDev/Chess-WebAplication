@@ -2,8 +2,11 @@
 
 include 'statics_interface.php';
 
-$data = Win("donix", "esketit");
+$data = GetShopItems();
 
-echo $data;
+foreach($data as $val)
+	echo $val;
+
+echo "nem,jo";
 
 ?>
