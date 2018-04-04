@@ -88,8 +88,8 @@
 
 #sub-content
 {
-	overflow:scroll;
-	height:80%;
+	overflow: auto;
+	height:85%;
 	padding: 12px 20px;
 }
 
