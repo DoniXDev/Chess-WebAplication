@@ -260,6 +260,40 @@
 	font-family: "Arial", Times, serif;
 	font-size: 1vw;
 }
+
+.profile-matchhistory
+{
+	height:40%;
+	width:80%;
+	
+	border: 1px solid black;
+}	
+
+.profile-matchhistory td
+{
+	color: black;
+	font-family: "Arial", Times, serif;
+	font-size: 1vw;	
+	
+	border: 1px solid black;
+}
+
+.profile-table
+{
+	height:80%;
+	width:100%;
+	
+	border: 1px solid black;
+}	
+
+.profile-table td
+{
+	color: black;
+	font-family: "Arial", Times, serif;
+	font-size: 1vw;	
+	
+	border: 1px solid black;
+}
 	
 	
 input[type=password]

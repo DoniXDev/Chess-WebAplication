@@ -70,6 +70,7 @@ function Buy($name, $type, $variant)
 	if($row['type'] == $type)
 		if($row['varian'] == $variant)
 			if($row['cost'] <= $data[3])
+				if($row['varian'] != $data[4][$row['type']])
 				$cost = $row['cost'];
 			else
 				return false;
