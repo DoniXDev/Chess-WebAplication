@@ -10,5 +10,5 @@ database MySQL.
 Tested browseres: Internet Explorer (FULLHD/HD) / Chrome (FUllHD/HD).
 
 
-Created for Summer practice competition, Epam 2018
+Created for Summer intenship competition, Epam 2018
 Created by Magyar (donix) Tamás.
