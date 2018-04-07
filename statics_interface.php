@@ -25,9 +25,26 @@ function GetPlayerDatas($name)
 		return $datas;
 }
 
+function GetAverageScores($type)
+{
+	$result = $GLOBALS['conn']->query("SELECT name, $type FROM players ORDER BY $type DESC");
+	
+	$str = 0;
+	$count = 0;
+	
+	if ($result->num_rows > 0) 
+	while($row = $result->fetch_assoc()) 
+	{
+			$str += $row[$type];
+			$count++;
+	}
+	
+	return round($str / $count);
+}
+
 function GetHightScores($type)
 {
-	$result = $GLOBALS['conn']->query("SELECT * FROM players ORDER BY mmr DESC");
+	$result = $GLOBALS['conn']->query("SELECT * FROM players ORDER BY $type DESC");
 	
 	$datas = array("empty:0", "empty:0", "empty:0", "empty:0", "empty:0", "empty:0" , "empty:0" , "empty:0" , "empty:0" , "empty:0");
 	$count = 0;

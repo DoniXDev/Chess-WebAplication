@@ -3,7 +3,7 @@
 	
 	<table id="ToplistTable">
 		
-		<tr class="border_bottom"> <td style="color: black;"> # </td> <td style="color: black;"> Név </td> <td style="color: black;"> MMR <td> </tr>
+		<tr class="border_bottom"> <td style="color: black;"> # </td> <td style="color: black;"> Név </td> <td style="color: black;"> ELO <td> </tr>
 		
 		<?php
 		include_once './statics_interface.php';

@@ -292,7 +292,21 @@
 	font-family: "Arial", Times, serif;
 	font-size: 1vw;	
 	
-	border: 1px solid black;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+div.image-gallery
+{
+	margin-right: 40%;
+	display: block;
+	background-color: #cccccc;
+}
+
+div.image-gallery img
+{
+	display: block;
+	float: right;
 }
 	
 	
