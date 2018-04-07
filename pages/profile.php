@@ -85,7 +85,7 @@
 										else
 											echo "orange'>". $winrate . "%";
 									?>
-									</b></td> <td><?php echo (GetAverageScores("wins") / GetAverageScores("games") * 100) . "%" ?></td>
+									</b></td> <td><?php echo round(GetAverageScores("wins") / GetAverageScores("games") * 100) . "%" ?></td>
 	</tr>
 	
 	<tr>
