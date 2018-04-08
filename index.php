@@ -19,6 +19,7 @@
 			- Toplist
 			- Profile: (default your) you can find any player profile
 			- Shop: you can buy skins, score reset for gold
+			- változás.
 	-->
 	
 	<body>
