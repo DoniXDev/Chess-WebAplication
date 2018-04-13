@@ -119,7 +119,7 @@ function Win($winner, $loser)
 	else
 		$cal = 1 + $fal;
 
-	$rate = 5;
+	$rate = 30;
 	
 	$mmrval = $rate/$cal;
 	if($mmrval<1 && $lMMR>0)
@@ -133,7 +133,7 @@ function Win($winner, $loser)
 	$GLOBALS['conn']->query("UPDATE players SET gold = gold + '50', games = games + '1', wins = wins + '1', mmr = '$wMMR' WHERE name = '$winner';");
 	$GLOBALS['conn']->query("UPDATE players SET gold = gold + '10', games = games + '1', mmr = '$lMMR' WHERE name = '$loser';");
 	
-	return $mmrval;
+	return round($mmrval);
 }
 
 ?>
