@@ -13,5 +13,5 @@ A program lehetőséget ad megméretteni magad a sakk világába, nincs más dol
 </p>
 <h3><a href="https://github.com/DoniXDev/Chess">Github</a>!</h3>
 
-<h2>A játékot letölthetheted itt: <a href="http://donixdev.esy.es/Chess%200.4.1.zip">LETÖLTÉS</a>.</h2>
+<h2>A játékot letölthetheted itt: <a href="http://donixdev.esy.es/Chess%201.0.zip">LETÖLTÉS |1.0|</a>.</h2>
 
