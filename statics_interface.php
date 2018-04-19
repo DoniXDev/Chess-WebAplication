@@ -1,7 +1,7 @@
 <?php
 
 include 'database.php';
-$GameVersion = "1.0";
+$GameVersion = "1.1.1";
 
 
 function GetPlayerDatas($name)
