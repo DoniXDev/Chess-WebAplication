@@ -25,5 +25,11 @@ if ($_SERVER["REQUEST_METHOD"] == "GET")
 		$loser = $_GET['los'];
 		echo Win($name, $loser);
 	}
+	
+	if($type == 2)
+	{
+		echo $GameVersion;
+	}
+	
 }
 ?>
