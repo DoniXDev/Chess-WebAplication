@@ -31,5 +31,16 @@ if ($_SERVER["REQUEST_METHOD"] == "GET")
 		echo $GameVersion;
 	}
 	
+	if($type == 3)
+	{
+		$data = GetHightScores("mmr");
+		
+		if(!empty($data))
+			foreach ($data as $val)
+				echo $val . "/";
+		else
+			echo "0";
+	}
+	
 }
 ?>
