@@ -42,5 +42,15 @@ if ($_SERVER["REQUEST_METHOD"] == "GET")
 			echo "0";
 	}
 	
+	if($type == 4)
+	{
+		$data = GetShopItems();
+		
+		if(!empty($data))
+			foreach ($data as $val)
+				echo $val . "/";
+		else
+			echo "0";
+	}
 }
 ?>
