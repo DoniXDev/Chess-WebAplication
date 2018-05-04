@@ -1,7 +1,7 @@
 <?php
 
 include 'database.php';
-$GameVersion = "1.2";
+$GameVersion = "1.4.1";
 
 
 function GetPlayerDatas($name)
@@ -121,13 +121,13 @@ function Win($winner, $loser)
 	else
 		$cal = 1 + $fal;
 
-	$rate = 30;
+	$rate = 15;
 	
 	$mmrval = $rate/$cal;
 	if($mmrval<1 && $lMMR>0)
 		$mmrval=1;
 	
-	$wMMR += round($mmrval);
+	$wMMR += round($mmrval) + 5;
 	$lMMR -= round($mmrval);
 	//
 	

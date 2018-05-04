@@ -4,6 +4,29 @@
 </div>
 
 <div class="update">
+	<h2>Játék Frissítés |1.0| => |1.4|</h2>
+		<h3>Hozzáadva</h3>
+		<ul>
+			<li><b>Bábú kinézetek</b></li>
+			<li><b>File ellenőrző és frissitő rendszer</b></li>
+			<li>Játék panel frissítő gomb</li>
+		</ul>	
+		<h3>Frissítve</h3>
+		<ul>
+			<li>Új frissítés menű</li>
+		</ul>
+		<h3>Javítva</h3>
+		<ul>
+			<li>MRR redszer változtatás</li>
+			<li>Gyalog bábú bármely pozícíóban tudott nyitó lépést végezni</li>
+			<li>Speciális betűk szűrése => Régi profilok ilyen névvel türülve (bocsi!)</li>
+			<li>Veszítés elől kilépés => verség</li>
+			<li>Színek egységesítése => Fekete</li>
+			<li>Kijavítva egy kifagyás ami a server oldali rossz lekezelés miatt történt </li>
+		</ul>		
+</div>
+
+<div class="update">
 	<h2>Játék Frissítés |1.0|</h2>
 		<h3>Hozzáadva</h3>
 		<ul>
